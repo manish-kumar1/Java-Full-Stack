@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table border="1">
+        <thead>
+            <th>Student Id</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>234</td>
+                <td>Alex</td>
+                <td>Male</td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td>432</td>
+                <td>Rohit</td>
+                <td>Male</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>423</td>
+                <td>Putin</td>
+                <td>Male</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>Maloni</td>
+                <td>Female</td>
+                <td>32</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <table border="1">
+        <thead>
+            <th>Student Id</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>234</td>
+                <td colspan="3">Alex</td>
+                <!-- <td>Male</td>
+                <td>43</td> -->
+            </tr>
+            <tr>
+                <td>432</td>
+                <td>Rohit</td>
+                <td>Male</td>
+                <td rowspan="3">45</td>
+            </tr>
+            <tr>
+                <td>423</td>
+                <td>Putin</td>
+                <td>Male</td>
+                
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>Maloni</td>
+                <td>Female</td>
+                
+            </tr>
+        </tbody>
+    </table><br><br>
+
+    <table border="1">
+        <thead>
+            <th>Student Id</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">234</td>
+                <td>Alex</td>
+                <td>Male</td>
+                <!-- <td>43</td> -->
+            </tr>
+            <tr>
+                <!-- <td>432</td> -->
+                <td>Rohit</td>
+                <td>Male</td>
+                <!-- <td>45</td> -->
+            </tr>
+            <tr>
+                <td colspan="3">423</td>
+                <!-- <td>Putin</td> -->
+                <!-- <td>Male</td> -->
+                
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>
