@@ -1,0 +1,12 @@
+p{
+    /* text-align: right; */
+    text-align: center;/
+    /* text-align: left; */
+}
+
+h3{
+    /* text-align: start; */
+    /* text-align: end; */
+    /* text-align: justify; */
+    text-align: initial;
+}

@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+h1{
+    color: aqua;
+}
+h2{
+    color: rgb(4, 230, 4);
+}
+.button{
+    background-color: blue;
+    color: white;
+}
+#headingThree{
+    color: magenta;
+}
+#headingFour{
+    color: rgb(255, 0, 0);
+}
