@@ -1,0 +1,17 @@
+p{
+    text-decoration: dashed;
+    text-decoration: underline;
+    text-decoration: dotted;
+}
+h1{
+    /* text-decoration: underline dotted pink; */
+    /* text-decoration: underline dashed; */
+    text-decoration: underline wavy red;
+    /* text-decoration: line-through; */ 
+} 
+a{
+    text-decoration: none;
+}
+.px{
+    text-decoration: underline dotted red;
+}
