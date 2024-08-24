@@ -1,0 +1,4 @@
+
+GRANT ALL PRIVILEGES ON *.* TO mister@localhost;
+
+SHOW GRANTS FOR MANISH;
