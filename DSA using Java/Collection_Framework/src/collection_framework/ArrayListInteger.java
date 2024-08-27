@@ -33,5 +33,10 @@ class ArrayListInteger{
 		
 		int min = Collections.min(li);
 		System.out.println(min);
+		
+		int idx = li.indexOf(32);
+		System.out.println("Index: "+idx);
+		
+		
 	}
 }

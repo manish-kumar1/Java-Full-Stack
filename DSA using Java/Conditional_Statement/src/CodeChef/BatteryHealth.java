@@ -1,17 +1,17 @@
 package CodeChef;
 
 import java.util.Scanner;
-public class RollerCoaster {
 
-	public static void main(String args[]) {
+class BatteryHealth{
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
 		int t = sc.nextInt();
 		while(t-->0) {
-			int x = sc.nextInt();
-			int h = sc.nextInt();
 			
-			if(x >= h) {
+			int x = sc.nextInt();
+			
+			if(x >= 80) {
 				System.out.println("YES");
 			}
 			else {
@@ -20,5 +20,4 @@ public class RollerCoaster {
 		}
 		sc.close();
 	}
-
 }

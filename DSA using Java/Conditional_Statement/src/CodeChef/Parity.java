@@ -1,17 +1,15 @@
 package CodeChef;
 
 import java.util.Scanner;
-public class RollerCoaster {
 
-	public static void main(String args[]) {
+class Parity{
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
 		int t = sc.nextInt();
 		while(t-->0) {
-			int x = sc.nextInt();
-			int h = sc.nextInt();
 			
-			if(x >= h) {
+			int n = sc.nextInt();
+			if(n % 2 == 0) {
 				System.out.println("YES");
 			}
 			else {
@@ -20,5 +18,4 @@ public class RollerCoaster {
 		}
 		sc.close();
 	}
-
 }
