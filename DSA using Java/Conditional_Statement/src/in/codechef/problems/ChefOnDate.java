@@ -1,4 +1,4 @@
-package CodeChef;
+package in.codechef.problems;
 
 import java.util.Scanner;
 

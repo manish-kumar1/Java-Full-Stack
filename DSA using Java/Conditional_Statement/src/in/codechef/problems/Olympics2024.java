@@ -1,5 +1,5 @@
 
-package CodeChef;
+package in.codechef.problems;
 
 import java.util.Scanner;
 class Olympics2023{

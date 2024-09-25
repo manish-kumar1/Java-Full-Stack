@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean class="in.sp.beans.Company" id="addr" autowire-candidate="false">
+    	<constructor-arg value="Google" />
+    	<constructor-arg value="Private" />
+    	<constructor-arg value="World wide" />
+    	<constructor-arg value="10000" />
+    </bean>
+    
+    <bean class="in.sp.beans.Company" id="addr2" autowire-candidate="true">
+    	<constructor-arg value="Intuit" />
+    	<constructor-arg value="Private ltd" />
+    	<constructor-arg value="Bangalore" />
+    	<constructor-arg value="1500" />
+    </bean>
+    
+    <bean class="in.sp.beans.Employee" id="empId" autowire="constructor">
+    	<constructor-arg value="Alex Carry" index="0"/>
+    	<constructor-arg value="35000" index="1"/>
+    </bean>
+    
+    <bean class="in.sp.beans.Employee" id="empId2" autowire="constructor">
+    	<constructor-arg value="Manish Kumar" index="0"/>
+    	<constructor-arg value="25000" index="1"/>
+    </bean>
+
+</beans>

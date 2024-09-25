@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+	<bean class="com.java.spring.college.Marks" id="mrk">
+		<property name="marks">
+			<map>
+				<entry key="Operating System" value="A"></entry>
+				<entry key="Data Structure" value="A+"></entry>
+				<entry key="OOPs" value="B+"></entry>
+				<entry key="Computer Networking" value="B"></entry>
+				<entry key="Internet of Things" value="C"></entry>
+			</map>
+		</property>
+	</bean>
+	
+	<bean class="com.java.spring.college.College" id="clg">
+		<property name="rollno" value="0177CS201069"></property>
+	</bean>
+	
+	<bean class="com.java.spring.college.Student" id="stdId">
+		<property name="name" value="Manish Kumar"></property>
+		<property name="city" value="Siwan"></property>
+		<property name="mobileNo" value="7803935712"></property>
+		<property name="gender" value="Male"></property>
+		<property name="college" ref="clg"></property>
+		<property name="marks" ref="mrk"></property>
+	</bean>
+</beans>

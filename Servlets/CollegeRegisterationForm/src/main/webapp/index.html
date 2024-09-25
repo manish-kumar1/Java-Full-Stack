@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" action="registerform" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="sname" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+            
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="bachelor">Bachelor's</option>
+                <option value="master">Master's</option>
+                <option value="phd">PhD</option>
+            </select>
+            
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+            
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree" required>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

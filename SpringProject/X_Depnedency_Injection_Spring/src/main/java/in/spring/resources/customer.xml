@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+        
+        
+        <bean class="com.java.spring.customer.Address" id="addr">
+        	<property name="city" value="Bengaluru"></property>
+			<property name="pincode" value="560029"></property>
+        </bean>
+        
+        <bean class="com.java.spring.customer.Payment" id="pay">
+        	<property name="transicationId" value="240000PUNB1234XR4"></property>
+        	<property name="mode" value="Debit Card"></property>
+        	<property name="time" value="3 : 45 pm"></property>
+        </bean>
+        
+        <bean class="com.java.spring.customer.Product" id="prdId">
+        	<property name="product">
+        		<map>
+        			<entry key="Jense" value="1000"></entry>
+        			<entry key="T-Shirt" value="600"></entry>
+        			<entry key="Shoes" value="800"></entry>
+        			<entry key="Denim" value="1400"></entry>
+        			<entry key="Bag" value="700"></entry>
+        		</map>
+        	</property>
+        </bean>
+        
+        <bean class="com.java.spring.customer.Customer" id="custId">
+        	<property name="name" value="Shamshad Ali"></property>
+        	<property name="gender" value="Male"></property>
+        	<property name="mobileNo" value="8795896848"></property>
+        	<property name="payment" ref="pay"></property>
+        	<property name="address" ref="addr"></property>
+        	<property name="product" ref="prdId"></property>
+        </bean>
+
+</beans>
